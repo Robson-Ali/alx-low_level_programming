@@ -14,25 +14,25 @@ while (h < 58)
 {
 	t = 48;
 	while (t < 58)
-	{
-		s = 48;
-		while (s < 58)
+{
+	s = 48;
+	while (s < 58)
+{
+	r = 48;
+	while (r < 58)
 		{
-			r = 48;
-			while (r < 58)
+			opt1 = (h * 10) + t;
+			opt2 = (s * 10) + r;
 			{
-				opt1 = (h * 10) + t;
-				opt2 = (e * 10) + r;
-				{
-					putchar(h);
-					putchar(t);
-					putchar(' ');
-					putchar(s);
-					putchar(r);
-					if (h == 57 && t == 56 && s == 57 &&& r ==57)
-						break;
-					putchar(',');
-					putchar(' ');
+				putchar(h);
+				putchar(t);
+				putchar(' ');
+				putchar(s);
+				putchar(r);
+				if (h == 57 && t == 56 && s == 57 &&& r ==57)
+					break;
+				putchar(',');
+				putchar(' ');
 				}
 				r++;
 			}
