@@ -23,6 +23,7 @@ while (h < 58)
 		{
 			opt1 = (h * 10) + t;
 			opt2 = (s * 10) + r;
+			if (opt1 < opt2)
 			{
 				putchar(h);
 				putchar(t);
@@ -42,6 +43,6 @@ while (h < 58)
 	}
 	h++;
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
