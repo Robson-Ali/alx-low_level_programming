@@ -9,24 +9,24 @@ int main(void)
 {
 int r, s, t;
 
-r = 34;
-s = 34;
-t = 34;
+r = 48;
+s = 48;
+t = 48;
 
-while (s < 44)
+while (s < 58)
 {
-	r = 34;
-	while (r < 44)
+	r = 48;
+	while (r < 58)
 {
-	t = 34;
-	while (t < 44)
+	t = 48;
+	while (t < 58)
 	{
 		if (s != r && s != t && r != t && s < r && r < t)
 		{
 			putchar(s);
 			putchar(r);
 			putchar(t);
-			if (r == 42 && s == 41 && t == 43)
+			if (r == 56 && s == 55 && t == 57)
 			{
 				break;
 			}
