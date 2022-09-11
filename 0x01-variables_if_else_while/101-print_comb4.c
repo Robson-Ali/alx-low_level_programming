@@ -33,11 +33,11 @@ while (s < 44)
 			putchar(',');
 			putchar(' ');
 		}
-		t++
+		t++;
 	}
-	r++
+	r++;
 }
-s++
+s++;
 }
 putchar('\n');
 return (0);
