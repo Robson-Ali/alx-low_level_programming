@@ -34,14 +34,14 @@ while (h < 58)
 					break;
 				putchar(',');
 				putchar(' ');
-				}
-				r++;
 			}
-			s++;
+			r++;
 		}
-		t++;
+		s++;
 	}
-	h++;
+	t++;
+}
+h++;
 }
 putchar('\n');
 return (0);
