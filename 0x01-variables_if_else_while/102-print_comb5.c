@@ -20,26 +20,26 @@ while (h < 58)
 {
 	r = 48;
 	while (r < 58)
+	{
+		opt1 = (h * 10) + t;
+		opt2 = (s * 10) + r;
+		if (opt1 < opt2)
 		{
-			opt1 = (h * 10) + t;
-			opt2 = (s * 10) + r;
-			if (opt1 < opt2)
-			{
-				putchar(h);
-				putchar(t);
-				putchar(' ');
-				putchar(s);
-				putchar(r);
-				if (h == 57 && t == 56 && s == 57 && r == 57)
-					break;
-				putchar(',');
-				putchar(' ');
-			}
-			r++;
+			putchar(h);
+			putchar(t);
+			putchar(' ');
+			putchar(s);
+			putchar(r);
+			if (h == 57 && t == 56 && s == 57 && r == 57)
+				break;
+			putchar(',');
+			putchar(' ');
 		}
-		s++;
+		r++;
 	}
-	t++;
+	s++;
+}
+t++;
 }
 h++;
 }
