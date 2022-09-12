@@ -30,7 +30,7 @@ while (h < 58)
 				putchar(' ');
 				putchar(s);
 				putchar(r);
-				if (h == 57 && t == 56 && s == 57 &&& r ==57)
+				if (h == 57 && t == 56 && s == 57 && r == 57)
 					break;
 				putchar(',');
 				putchar(' ');
