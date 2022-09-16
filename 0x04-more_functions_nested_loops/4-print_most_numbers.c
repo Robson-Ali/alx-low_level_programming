@@ -15,7 +15,7 @@ void print_numbers(void)
 	{
 		if ((n == 50) && (n == 52))
 		{
-			break;
+			continue;
 		}
 		putchar(n);
 	}
