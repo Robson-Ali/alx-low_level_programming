@@ -3,8 +3,8 @@
 
 /**
  * _puts - prints a string
- *@str: string to print
-
+ * @str: string to print
+ * 
  * Description: prints a string
  * Return: 0 (success)
  */
