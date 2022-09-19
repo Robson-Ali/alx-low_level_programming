@@ -11,9 +11,11 @@
 void _puts(char *str)
 
 {
-	for (; *str != '\0'; str++)
+	int i = 0;
+
+	while (*(str + i) != '\n')
 	{
-		putchar(*str);
+		putchar(*(str + i));
 		i++;
 	}
 	putchar('\n');
