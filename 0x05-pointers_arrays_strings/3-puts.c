@@ -9,16 +9,13 @@
  * Return: 0 (success)
  */
 
-
 int _puts(char *str)
-
 {
+	int i = 0;
 
-		int len = 0;
-
-		while (*(str + i) != '\n')
-		{
-			putchar((str + i));
-			i++:
-		}
+	while (*(str + i) != '\n')
+	{
+		putchar((str + i));
+		i++:
+	}
 }
