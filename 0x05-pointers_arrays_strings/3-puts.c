@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,17 +5,16 @@
  * @str: string to print
  *
  * Description: prints a string
- * Return: 0 (success)
+ * Return:
  */
 
-int _puts(char *str)
-{
-	int str = 0;
+void _puts(char *str)
 
-	while (*(str + i) != '\0')
+{
+	for (; *str != '\0' str++)
 	{
-		putchar(*(str + i));
-		i++:
+		putchar(*str);
+		i++;
 	}
-	putchar(10);
+	putchar('\n');
 }
