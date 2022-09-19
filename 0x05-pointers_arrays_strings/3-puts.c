@@ -5,16 +5,16 @@
  * @str: string to print
  *
  * Description: prints a string
- * Return:
+ * Return: string
  */
 
 void _puts(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (*(str + i) != '\n')
+	for (i = 0; str[i] != '\n'; i++)
 	{
-		putchar(*(str + i));
-		i++;
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
