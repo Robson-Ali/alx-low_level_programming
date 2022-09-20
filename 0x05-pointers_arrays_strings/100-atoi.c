@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * @s: The string to be converted
+ *_atoi - Converts a string to an integer. 
+ *@s: The string to be converted
  *
- * Return: The integer value of converted string
+ *Return: The integer value of converted string
  */
 
 int _atoi(char *s)
