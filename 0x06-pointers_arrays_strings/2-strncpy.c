@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * _strncpy - c funtion that copies a string
- * @dest: string that will be appended
- * @src: string to be completed at end of dest
+ * _strncpy - c funtion that copies a strin including the
+ * terminating null byte. using at most an inputted number of bytes.
+ * if the lemgth of the source string is less than the maximum byte number
+ * the reminder of the destination string is filled with null bytes
+ * @dest: buffer storing the string copy
+ * @src: string source
  * @n: max number of bytes copied
  *
  * Return: returns new copied string
