@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
  * print_times_table - Prints a multiplication table
@@ -20,33 +20,33 @@ void print_times_table(int n)
 				z = x * y;
 				if (z > 99)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar((z / 100) + '0');
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
+					putchar(',');
+					putchar(' ');
+					putchar((z / 100) + '0');
+					putchar(((z / 10) % 10) + '0');
+					putchar((z % 10) + '0');
 				}
 				else if (z > 9)
 				{
-					_putchar(',');
-					_putcchar(' ');
-					_putchar(' ');
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
+					putchar(',');
+					putcchar(' ');
+					putchar(' ');
+					putchar(((z / 10) % 10) + '0');
+					putchar((z % 10) + '0');
 				}
 				else
 				{
 					if (y != 0)
 					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
+						putchar(',');
+						putchar(' ');
+						putchar(' ');
+						putchar(' ');
 					}
-					_putchar(z + '0');
+					putchar(z + '0');
 				}
 			}
-			_putchar('\n');
+			putchar('\n');
 		}
 	}
 }
