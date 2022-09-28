@@ -2,22 +2,33 @@
 
 /**
  * _sqrt_recursion - returns the natural square root of a number.
- * @i: integer
  * @n: integer
  *
- * Return: _sqrt_recursion
+ * Return: the square root of n
  */
 
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
+	if (n == 1 || n == 0)
+		return (n);
+	return (_sqrt(0, n));
+}
+
+/**
+ * _sqrt- returns the square root of a number
+ * @n: number to be evaluated
+ * @i: square number
+ *
+ * Return: the square root of n
+ */
+
+int _sqrt(int n, int i)
+{
+	if (n > x / 2)
+		return (-1);
+
+	else if (n * n == i)
 		return (n);
 
-	else if (i * i < n)
-		return (_sqrt_recursion(i + 1, n));
-
-	else if (i * i == n)
-		return (i);
-
-	return (-1);
+	return (_sqrt(n + 1, i));
 }
