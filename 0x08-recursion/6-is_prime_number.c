@@ -16,12 +16,12 @@ int evaluate_num(int num, int i)
 		return (1);
 	}
 
-	else if (num & i == 0)
+	else if ((num & i) == 0)
 	{
 		return (0);
 	}
 
-	if (num & i != 0)
+	if ((num & i) != 0)
 	{
 		return (evaluate_num(num, i + 1));
 	}
@@ -41,15 +41,15 @@ int is_prime_number(int n)
 
 	i = 2;
 
-	if (num < 2)
+	if (n < 2)
 	{
 		return (0);
 	}
 
-	if (num == 2)
+	if (n == 2)
 	{
 		return (1);
 	}
 
-	return (evaluate_num(num, i));
+	return (evaluate_num(n, i));
 }
