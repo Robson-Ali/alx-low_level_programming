@@ -1,5 +1,7 @@
 #include "main.h"
 
+check(s, 0, _strlen_recursion(s) - 1, &flag);
+
 /**
  * is_palindrome - finds palindrome
  * @s: string to be used
