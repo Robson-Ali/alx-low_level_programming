@@ -18,9 +18,7 @@ int *array_range(int min, int max)
 
 	if (!rob)
 		return (0);
-
 	while (i < max - min)
 		rob[i++] = s++;
-
 	return (rob);
 }
