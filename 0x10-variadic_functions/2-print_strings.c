@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.>
+#include <stdlib.h>
 /**
  * print_strings - prints strings followed by a new line.
  * @separator: string to be printed between strings.
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		s = va_arg(strings, char *s);
+		s = va_arg(strings, char *);
 
 		if (s == NULL)
 			s = "(nil)";
