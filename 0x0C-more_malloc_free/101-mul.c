@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
+
 /**
  * _isdigit - checks if character is digit
  * @c: the character to check
@@ -20,13 +21,12 @@ int _isdigit(int c)
  *
  * Return: integer length of string
  */
-
 int _strlen(char *s)
 {
 	int i = 0;
 
 	while (*s++)
-	i++;
+		i++;
 	return (i);
 }
 
@@ -37,7 +37,6 @@ int _strlen(char *s)
  *
  * Return: the product big number string
  */
-
 char *big_multiply(char *s1, char *s2)
 {
 	char *r;
@@ -88,7 +87,6 @@ char *big_multiply(char *s1, char *s2)
  *
  * Return: Always 0 on success.
  */
-
 int main(int argc, char **argv)
 {
 	char *r;
