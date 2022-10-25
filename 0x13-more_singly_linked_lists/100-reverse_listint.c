@@ -23,6 +23,8 @@ listint_t *reverse_listint(listint_t **head)
 		hanan = *head;
 		*head = robson;
 	}
-	(*head)->next = robson;
+
+	(*head)->next = hanan;
+
 	return (*head);
 }
