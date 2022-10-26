@@ -14,7 +14,7 @@ size_t looped_listint_safe(const listint_t *head);
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	listint_t *tmp, *han;
+	const listint_t *tmp, *han;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
@@ -51,6 +51,7 @@ size_t looped_listint_len(const listint_t *head)
 
 	return (0);
 }
+
 /**
  * print_listint_safe - prints a linked list.
  * @head: head of a list.
