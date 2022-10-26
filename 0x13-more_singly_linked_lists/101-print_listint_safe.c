@@ -46,7 +46,7 @@ size_t looped_listint_len(const listint_t *head)
 		}
 
 		tmp = tmp->next;
-		han = han->next;
+		han = (han->next)->next;
 	}
 
 	return (0);
