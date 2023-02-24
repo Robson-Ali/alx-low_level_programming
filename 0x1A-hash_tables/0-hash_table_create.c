@@ -7,29 +7,21 @@
  * Return: If an error occurs - NULL.
  *         Otherwise - a pointer to the new hash table.
  */
-<<<<<<< HEAD
-
-=======
->>>>>>> d6595faba97ef31d7d73cf57ae001f96e9344206
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *rob;
-	unsigned long int j;
+	hash_table_t *ht;
+	unsigned long int i;
 
-	rob = malloc(sizeof(hash_table_t));
-	if (rob == NULL)
+	ht = malloc(sizeof(hash_table_t));
+	if (ht == NULL)
 		return (NULL);
 
-	rob->size = size;
-	rob->array = malloc(sizeof(hash_node_t *) * size);
-	if (rob->array == NULL)
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
 		return (NULL);
-	for (j = 0; j < size; j++)
-<<<<<<< HEAD
-	rob->array[i] = NULL;
-=======
-		rob->array[i] = NULL;
->>>>>>> d6595faba97ef31d7d73cf57ae001f96e9344206
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
 
-	return (rob);
+	return (ht);
 }
